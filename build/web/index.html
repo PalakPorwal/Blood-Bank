@@ -1,0 +1,55 @@
+<head>
+<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+<style>
+.mySlides 
+
+input[type="text"], input[type="mail"]
+{
+    border: none;
+    background:black;
+    height: 30px;
+    font-size: 16px;
+	margin-left:2%;
+	padding:15px;	
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <a href="#default" class="logo"><img class="logo" src="Logo1.png"></a>
+    <h1>Blood Bank Management System</h1>
+    <h3>~By Palak Porwal</h3>
+    <div class="header-right">
+        <a class="active" href="index.jsp">Get Started </a>
+         
+</div>
+ 
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+<body>
+<br>
+<div style="max-width:100%">
+   <img class="mySlides"  src="Blood2.jpg" >
+</div>
+
+<h3><center>~By Palak Porwal </center></h3>
+</body>
+</html>
+
